@@ -1,0 +1,6 @@
+﻿'create a custom iprop called TAG and make its value the filename
+iProperties.Value("Custom", "Nom fichier") = ThisDoc.FileName(False) 'false = without extension
+
+
+
+iProperties.Value("project","Part Number") = iProperties.Value("Custom", "Nom fichier")
